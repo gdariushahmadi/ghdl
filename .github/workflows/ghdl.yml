@@ -79,12 +79,7 @@ jobs:
 
           # Returns 0 if the URL looks like a media/video URL handled by yt-dlp
           is_media_url() {
-            echo "$1" | grep -qiP \
-              '(youtube\.com|youtu\.be|vimeo\.com|dailymotion\.com|twitch\.tv|tiktok\.com|\
-instagram\.com|facebook\.com|fb\.watch|twitter\.com|x\.com|reddit\.com|bilibili\.com|\
-vk\.com|vkvideo\.ru|rutube\.ru|streamable\.com|odysee\.com|rumble\.com|kick\.com|\
-ok\.ru|weibo\.com|douyin\.com|afreecatv\.com|\
-\.(mp4|mkv|webm|flv|avi|mov|m3u8)(\?|$))'
+            echo "$1" | grep -qiP '(youtube\.com|youtu\.be|vimeo\.com|dailymotion\.com|twitch\.tv|tiktok\.com|instagram\.com|facebook\.com|fb\.watch|twitter\.com|x\.com|reddit\.com|bilibili\.com|vk\.com|vkvideo\.ru|rutube\.ru|streamable\.com|odysee\.com|rumble\.com|kick\.com|ok\.ru|weibo\.com|douyin\.com|afreecatv\.com|\.(mp4|mkv|webm|flv|avi|mov|m3u8)(\?|$))'
           }
 
           # ── Docker images (docker://image:tag) ───────────────────────────────
