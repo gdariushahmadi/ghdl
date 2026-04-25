@@ -118,7 +118,7 @@ ok\.ru|weibo\.com|douyin\.com|afreecatv\.com|\
               YTDIR="$WORKDIR/yt"
               mkdir -p "$YTDIR"
               yt-dlp \
-                -f "bestvideo+bestaudio/best" \
+                -f "bestvideo[height<=480][ext=mp4]+bestaudio[ext=m4a]/best[height<=480][ext=mp4]/best[height<=480]" \
                 --merge-output-format mp4 \
                 --no-playlist \
                 -o "$YTDIR/%(title)s.%(ext)s" \
